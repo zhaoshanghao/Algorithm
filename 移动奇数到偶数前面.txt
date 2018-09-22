@@ -1,0 +1,18 @@
+void move(Sqlist *&s)                           //移动奇数到偶数前面
+{
+    int i=1,j=s->length;
+    int temp;
+    while (i<j)
+    {
+        while ((i<j) && (s->data[j]%2==0))         //从右往左遍历找第一个奇数
+            j--;
+        while ((i<j) && (s->data[i]%2==1))         //从左往右遍历找第一个偶数
+            i++;
+        if (i<j)                                   //如果未到达“分界线”，将上述循环中找到的奇数和偶数交换
+        {
+            temp=s->data[i];
+            s->data[i]=s->data[j];
+            s->data[j]=temp;
+        }
+    }
+}
