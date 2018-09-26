@@ -1,4 +1,4 @@
-git remote add origin git@github.com:michaelliao/learngit.git
-git push -u origin master
-git push origin master
-git clone git@github.com:michaelliao/gitskills.git
+git remote add origin git@github.com:michaelliao/learngit.git      链接到github网站
+git push -u origin master                                          全部push到github官网
+git push origin master                                             push到github官网
+git clone git@github.com:michaelliao/gitskills.git                 从github官网上克隆代码
